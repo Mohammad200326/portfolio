@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <!-- Start form -->
+    <form>
+      <!-- Start table, To better display the form -->
+      <table>
+        <!-- This rpw show name and email inputs -->
+        <tr>
+          <!-- Here is name input, it is required and must be between 3 and 20 characters and contain only letters -->
+          <td>
+            <label for="name">Name: </label>
+            <input
+              type="text"
+              placeholder="Enter Your Name"
+              name="name"
+              id="name"
+              required
+              pattern="[A-Za-z]{3,20}"
+              title="Name must be between 3 and 20 characters and contain only letters"
+            />
+          </td>
+          <!-- Here is email input, it is required -->
+          <td>
+            <label for="email">Email: </label>
+            <input
+              type="email"
+              placeholder="Enter Your Email"
+              name="email"
+              id="email"
+              required
+            />
+          </td>
+        </tr>
+        <!-- This two rows for space between rows -->
+        <tr>
+          <td colspan="2"></td>
+        </tr>
+        <tr>
+          <td colspan="2"></td>
+        </tr>
+        <!-- This row shows messege textarea, it is required -->
+        <tr>
+          <td colspan="2">
+            <label for="message">Messege: </label>
+            <br />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Enter Your Messege"
+              cols="56"
+              rows="15"
+              required
+            ></textarea>
+          </td>
+        </tr>
+        <!-- These two rows for space between rows -->
+        <tr>
+          <td colspan="2"></td>
+        </tr>
+        <tr>
+          <td colspan="2"></td>
+        </tr>
+        <!-- This row shows submit and reset buttons -->
+        <tr>
+          <td colspan="2">
+            <input type="submit" />
+            <span>&nbsp</span>
+            <input type="reset" value="Clear all inputs" />
+          </td>
+        </tr>
+      </table>
+      <!-- End table -->
+    </form>
+    <!-- End form -->
+  </body>
+</html>
